@@ -19,8 +19,7 @@ class Base_num:
     Base Number module
     ===
     """
-    numbers: list[str] = [str(i) for i in range(10)]+[chr(i)
-                                                      for i in range(ord("a"), ord("z")+1)]
+    numbers: list[str] = [str(i) for i in range(10)]+[chr(i)for i in range(ord("a"), ord("z")+1)]
     BIN: int = 2
     OCT: int = 8
     HEX: int = 16
@@ -95,8 +94,7 @@ class Base_num:
 
     @staticmethod
     def set_numbers_list_default() -> None:
-        numbers: list[str] = [str(i) for i in range(10)]+[chr(i)
-                                                          for i in range(ord("a"), ord("z")+1)]
+        numbers: list[str] = [str(i) for i in range(10)]+[chr(i)for i in range(ord("a"), ord("z")+1)]
 
     def __add__(self, other):
         d = self.decimal+other.decimal
