@@ -50,7 +50,7 @@ class Base_num:
     @classmethod
     def decimal_to_basenum(cls, num: int, base: int) -> "Base_num":
         """
-        10進数からn進数に変換
+        decimal to base number
         """
         if len(cls.numbers) < base:
             raise ListLengthError(
